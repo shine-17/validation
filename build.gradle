@@ -32,6 +32,10 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	// ScriptAssert 를 지원하기 위해
+	implementation 'org.openjdk.nashorn:nashorn-core:15.3'
 }
 
 tasks.named('test') {
